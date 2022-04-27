@@ -1,0 +1,10 @@
+.hero{
+  background-image: url(../img/bg-img.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+body{
+  font-family: "Montserrat";
+}
