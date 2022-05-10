@@ -152,7 +152,7 @@ let deleteAddedProducts = function () {
   }
 }
 
-  /* delete products list */
+  /* delete adds list */
 let deleteAddedAdds = function () {
   elOutputAdds.innerHTML = '';
   for (let i = 0; i < addedAddsArr.length; i++) {

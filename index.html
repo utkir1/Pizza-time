@@ -7,92 +7,93 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
+  <title>Pizza Time</title>
 </head>
 
 <body>
-  <header>
-    <nav class="navbar  navbar-expand-lg navbar-light bg-secondary bg-opacity-25 p-0">
-      <div class="container border-5">
-        <a href="#"><img src="img/bg_no.png" width="150" height="80" alt="logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class=" justify-content-end collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item me-3 ">
-              <a class="nav-link active  text-danger fw-bolder text-uppercase" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item me-3">
-              <a class="nav-link text-black  fw-bolder text-uppercase" href="#">Menu</a>
-            </li>
-            <li class="nav-item me-3">
-              <a class="nav-link text-black text-uppercase fw-bolder" href="#">Categories</a>
-            </li>
-            <li class="nav-item me-3">
-              <a class="nav-link text-black text-uppercase fw-bolder" href="#">Services</a>
-            </li>
-            <li class="nav-item dropdown d-flex align-items-center">
-              <a class="nav-link text-black text-uppercase fw-bolder dropdown-toggle active" href="#"
-                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Pizzas
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item  active" href="#">Pizzas</a></li>
-                <li><a class="dropdown-item" href="#">Drinks</a></li>
-                <li><a class="dropdown-item" href="#">Others</a></li>
+  <div class="wrapper">
+    <header>
+      <nav class="navbar  navbar-expand-lg navbar-light bg-light bg-opacity-50 p-0">
+        <div class="container border-5">
+          <a href="#"><img src="img/bg_no.png" width="150" height="80" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class=" justify-content-end collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item me-3 ">
+                <a class="nav-link active  text-danger fw-bolder text-uppercase" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link text-black  fw-bolder text-uppercase" href="#">Menu</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link text-black text-uppercase fw-bolder" href="#">Categories</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link text-black text-uppercase fw-bolder" href="#">Services</a>
+              </li>
+              <li class="nav-item dropdown d-flex align-items-center">
+                <a class="nav-link text-black text-uppercase fw-bolder dropdown-toggle active" href="#"
+                  id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Pizzas
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item  active" href="#">Pizzas</a></li>
+                  <li><a class="dropdown-item" href="#">Drinks</a></li>
+                  <li><a class="dropdown-item" href="#">Others</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+      <div class="hero h-75">
+        <div class="container">
+          <h2 class="h1 text-white text-center">Pitsa buyurtma qilish</h2>
+          <div class="row vh-100 ">
+            <div class="col-6 bg-opacity-75 bg-light ">
+              <form action="https://echo.htmlacademy.ru" class="js-form" method="post" id="form-site">
+                <fieldset>
+                <legend class="mb-1 mt-3 fw-bolder">Noni qanday bo'lsin?</legend>
+                  <select name="selectBread" class="js-bread-select form-select w-75 mb-2"></select>
+                </fieldset>
+                <fieldset>
+                <legend class="mb-2 fw-bolder">Kattaligi:</legend>
+                <div class="js-radios-size ">
+                </div>
+                </fieldset>
+                <fieldset>
+                  <legend class="mb-2 fw-bolder ">Ustiga nima solaylik?</legend>
+                  <div class="js-checkboxes ">
+                  </div>
+                </fieldset>
+                <fieldset >
+                  <legend class=" mb-2 fw-bolder">Qo`shimchalar:</legend>
+                  <div class="js-checkboxes-other ">
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+            <div class="col-6 bg-opacity-75 bg-light border-start border-dark border-5 ">
+              <output class="fw-bolder fs-5 mb-3 mt-4 d-block">Non: <span class="js-bread-type fw-normal"></span> </output>
+              <output class="fw-bolder fs-5 mb-3 d-block">Kattaligi: <span class="js-bread-size fw-normal">25sm</span>
+              </output>
+              <output class="fw-bolder fs-5 d-block mb-0">Ustida:</output>
+              <ul class="js-ingredients-list list-unstyled h-25">
               </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <div class="hero h-75">
-      <div class="container">
-        <h2 class="h1 text-white text-center">Pitsa buyurtma qilish</h2>
-        <div class="row vh-100 ">
-          <div class="col-6 bg-opacity-75 bg-light ">
-            <form action="https://echo.htmlacademy.ru" class="js-form" method="post" id="form-site">
-              <fieldset>
-              <legend class="mb-1 mt-3 fw-bolder">Noni qanday bo'lsin?</legend>
-                <select name="selectBread" class="js-bread-select form-select w-75 mb-2"></select>
-              </fieldset>
-              <fieldset>
-              <legend class="mb-2 fw-bolder">Kattaligi:</legend>
-              <div class="js-radios-size ">
-              </div>
-              </fieldset>
-              <fieldset>
-                <legend class="mb-2 fw-bolder ">Ustiga nima solaylik?</legend>
-                <div class="js-checkboxes ">
-                </div>
-              </fieldset>
-              <fieldset >
-                <legend class=" mb-2 fw-bolder">Qo`shimchalar:</legend>
-                <div class="js-checkboxes-other ">
-                </div>
-              </fieldset>
-            </form>
-          </div>
-          <div class="col-6 bg-opacity-75 bg-light border-start border-dark border-5">
-            <output class="fw-bolder fs-5 mb-3 mt-4 d-block">Non: <span class="js-bread-type fw-normal"></span> </output>
-            <output class="fw-bolder fs-5 mb-3 d-block">Kattaligi: <span class="js-bread-size fw-normal">25sm</span>
-            </output>
-            <output class="fw-bolder fs-5 d-block mb-0">Ustida:</output>
-            <ul class="js-ingredients-list list-unstyled h-25">
-            </ul>
-            <output class="fw-bolder fs-5 mb-0 d-block">Qo`shimcha:</output>
-            <ul class="js-adds-list list-unstyled ">
-            </ul>
-            <button class="btn btn-danger" type="submit" form="form-site">Buyurtma berish</button>
+              <output class="fw-bolder fs-5 mb-0 d-block">Qo`shimcha:</output>
+              <ul class="js-adds-list list-unstyled ">
+              </ul>
+              <button class="btn btn-danger" type="submit" form="form-site">Buyurtma berish</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </main>
+  </div>
+
 
 
 
